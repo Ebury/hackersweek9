@@ -1,0 +1,83 @@
+<aura:component implements="force:appHostable" controller="NewTradeController">
+    <aura:attribute name="trade" type="Trade__c"/>
+
+    <lightning:card class="slds-size_x-large slds-align_absolute-center">
+        <lightning:layout>
+            <lightning:layoutItem size="12">
+                <h3 class="slds-section-title--divider">New Trade</h3>
+            </lightning:layoutItem>
+        </lightning:layout>
+
+        <lightning:layout>
+            <lightning:layoutItem size="3">
+                <lightning:select label="Sell Currency"
+                                  value="{!v.trade.Sell_Currency__c}"
+                                  required="true">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </lightning:select>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="2">
+                <lightning:icon iconName="utility:chevronright" class="slds-align_absolute-center"/>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="2">
+                <lightning:input label="Rate"
+                                 disabled="true"
+                                 value="{!v.trade.Rate__c}"/>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="2">
+                <lightning:icon iconName="utility:chevronright" class="slds-align_absolute-center"/>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="3" class="slds-m-right--medium">
+                <lightning:select label="Buy Currency"
+                                  value="{!v.trade.Buy_Currency__c}"
+                                  required="true">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </lightning:select>
+            </lightning:layoutItem>
+        </lightning:layout>
+
+        <lightning:layout>
+            <lightning:layoutItem size="3">
+                <lightning:input label="Sell Amount"
+                                 required="true"
+                                 value="{!v.trade.Sell_Amount__c}"/>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="6"/>
+
+            <lightning:layoutItem size="3" class="slds-m-right--medium">
+                <lightning:input label="Buy Amount"
+                                 disabled="true"
+                                 value="{!v.trade.Buy_Amount__c}"/>
+            </lightning:layoutItem>
+        </lightning:layout>
+
+
+        <lightning:layout>
+            <lightning:layoutItem size="2" class="slds-p-top--medium">
+
+                <lightning:buttonGroup>
+                    <lightning:button label="Cancel"/>
+                </lightning:buttonGroup>
+            </lightning:layoutItem>
+
+            <lightning:layoutItem size="8"/>
+
+            <lightning:layoutItem size="2" class="slds-p-top--medium">
+
+                <lightning:buttonGroup>
+                    <lightning:button label="Create" />
+                </lightning:buttonGroup>
+            </lightning:layoutItem>
+        </lightning:layout>
+
+    </lightning:card>
+</aura:component>
