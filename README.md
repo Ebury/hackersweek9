@@ -5,8 +5,8 @@ En este taller vamos a construir una aplicación que nos permitirá crear y alma
 **REQ1** - La principal vista es la Ebury Trading app, la cual contiene una lista mostrando los contratos previamente reservados y
 algunos campos relevantes: Sell Currency, Sell Amount, Buy Currency, Buy Amount y Rate.
 
-**REQ2** - Desde la vista principal podremos acceder, usando el botón de New Trade, a un modal que nos permitirá reservar un contrato nuevo.
-Solo Buy Currency y Buy Amount serán editables, y el resto de campos se autocompletarán según REQ3.
+**REQ2** - Desde la vista principal podremos acceder, usando el botón de New Trade, a una nueva vista que nos permitirá reservar un contrato nuevo.
+Solo Sell Currency, Sell Amount y Buy Currency serán editables, y el resto de campos se autocompletarán según REQ3.
 
 **REQ3** - Usaremos un third party, en este caso fixer.io, para consultar rates en tiempo real a través de su API.
 
