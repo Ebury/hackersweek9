@@ -101,7 +101,7 @@ En este punto acabamos de completar el primer requisito y vamos a continuar, est
 
 # Paso 4 - New Trade - frontal
 
-_Recomendación: para evitar comportamientos extraños, es recomendable desabilitar la cache en los entornos de desarrollo:
+_Recomendación: para evitar comportamientos extraños, es recomendable deshabilitar la cache en los entornos de desarrollo:
 Setup > Security > Session Settings > Enable secure and persistent browser caching to improve performance > off_
 
 Lo primero es reemplazar el botón por defecto para crear nuevos Trades por el nuestro customizable.
