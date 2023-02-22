@@ -1,4 +1,4 @@
-<aura:component implements="force:appHostable" controller="NewTradeController">
+<aura:component implements="force:appHostable">
     <aura:attribute name="trade" type="Trade__c"/>
 
     <lightning:card class="slds-size_x-large slds-align_absolute-center">

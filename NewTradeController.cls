@@ -15,7 +15,6 @@ public class NewTradeController {
 
     @AuraEnabled
     public static Boolean createTrade(Trade__c trade) {
-        System.debug(trade);
         try{
             insert trade;
         } catch (Exception e) {
