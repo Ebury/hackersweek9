@@ -1,6 +1,9 @@
 public class RatesProvider {
 
-    private static String key = 'your key'; // never hardcode credentials directly in your code
+    private static String key = 'hngbwptf6VoSCqAY9B6ziPsDLMP3WzOL';
+    // Nunca escribir credenciales directamente en el código, en este caso está hecho con el objetivo de simplificar el ejercicio
+    // Si bien no hay problema en que los estudiantes usen esta clave de prueba, mi recomendación es crear tu propia clave en fixer.io, la cuenta gratuita permite 100 llamadas mensuales.
+
 
     public static Decimal getLatestRate(String sellCurrency, String buyCurrency) {
         HttpRequest req = new HttpRequest();
